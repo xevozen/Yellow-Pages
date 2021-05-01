@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Truecaller</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <img src="media/telephone directory.jpg" alt="backgound" class="bg" />
+    <div id="header-title"><a href="https://www.google.co.in/"><img style="height: 100px;" src="media/main_icon.png"></a></div>
+    <div id="blank-shift"></div>
+    <div class="container">
+        <div class="topnav">
+            <img src="media/blank_profile_picture.jpg">
+            <a onclick="document.getElementById('signup-container').style.display='block' " href="#home">Home</a>
+            <a onclick="document.getElementById('login-container').style.display='block' " href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+    <div id="search-container">
+        <form id="search-bar" action="action.php" method="post">
+            <input type="tel" name="value" placeholder="Search a phone number" pattern="[0-9 -+()]{4,15}" autofocus="" required="">
+            <button><img src="media/search-icon.png"></button>
+        </form>        
+    </div>
+    <div id="signup-container">
+        <div id="signup">
+            <label id="signup-head">Register Here</label>
+            <form id="signup-form">
+                <label>Name</label><br>
+                <input type="text" name="" placeholder="Aditya"><br>
+                <label>Email</label><br>
+                <input type="email" name="" placeholder="example@domain.com"><br>
+                <label>Phone</label><br>
+                <input type="tel" name="" placeholder="9876543210"><br>
+                <label>Profile Picture</label><br>
+                <input type="file" name="" ><br>
+                <label>Password</label><br>
+                <input type="password" name="" placeholder="Password length 8 to 16"><br>
+                <label>Re-Enter Password</label><br>
+                <input type="password" name="" placeholder="Re-Enter password"><br>
+                <label>Already Have an Account? <a href="login">Log In</a> Here</label>
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+        <div onclick="document.getElementById('signup-container').style.display='none' "></div>
+    </div>
+    <div id="login-container">
+        <div id="login">
+            <label id="login-head">Login Here</label>
+            <form id="login-form">
+                <label>Email Id / Regisered Mobile no.</label>
+                <input type="text" name="" placeholder="example@domain.com / 987643210"><br>
+                <label>Password</label><br>
+                <input type="password" name="" placeholder="Password length 8 to 16"><br>
+                <label>Don't Have an Account? <a href="signup">Register</a> Here</label><br>
+                <label>Forgotten <a href="signup">password</a> ?</label>
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+        <div onclick="document.getElementById('login-container').style.display='none' "></div>
+    </div>
+    <script>
+    // Get the modal
+    var modal = document.getElementById('signup-container');
+
+    // When the user clicks anywhere outside of the modal, close it
+    /*window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }*/
+    var modal2 = document.getElementById('login-container');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+        else if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    <div class="footer">
+        <br>
+        <marquee>Developed by SOUHARDHYA PAUL</marquee>
+    </div>
+</body>
+</html>

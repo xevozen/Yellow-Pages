@@ -1,0 +1,85 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+#table-container{
+	width: 600px;
+	height: auto;	
+	position: absolute;
+	top: 180px;
+	bottom: 0;
+	left: 0;
+	right: 0;  	
+	margin: auto;
+	background-color: rgba(0,0,0,0.3);
+	border: 2px black solid;
+	border-radius: 25px;
+	text-align: center;
+	overflow: hidden;
+}
+.table1{
+	margin: 10px auto;
+	background-color: #999;
+	width: 96%;
+	max-height: 94%;
+	border-radius: 5px;
+	border: 2px black solid;
+	overflow: scroll;
+}
+table {
+		font-family: 'Montserrat', sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+tr, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	height: 30px;
+}
+tr:first-child{
+	height: 40px;
+	background-color: #666;
+}
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+#scrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+	border-radius: 10px;
+}
+
+#scrollbar::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+	border-radius: 10px
+}
+
+#scrollbar::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border-radius: 4px;
+}
+@media screen and (max-width: 700px) {
+	 #table-container{
+		width: 90%;
+		max-width: 720px;
+		position: absolute;
+		top: 35%;
+		bottom: 0;
+		left: 0;
+		right: 0;  	
+		margin: auto;
+		overflow: scroll;
+	}
+	.table1{
+		margin: 2px;
+		width: 96%;
+		max-height: 94%;
+		max-width: 710px;
+		overflow: scroll;
+	}
+
+}

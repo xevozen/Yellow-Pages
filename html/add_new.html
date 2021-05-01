@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add New Contact</title>
+    <link rel="stylesheet" type="text/css" href="../css/add new.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img src="../media/telephone directory.jpg" alt="backgound" class="bg" />
+    <div id="header-title"><a href="index.php"><img style="height: 100px;" src="../media/main_icon.png"></a></div>
+    <div id="blank-shift"></div>
+    <div class="container">
+        <div class="topnav">
+        	<img src="../media/blank_profile_picture.jpg">
+            <a>Log In</a>
+            <a>Sign Up</a>
+        </div>
+    </div>
+	<div id="addnew-container">
+        <div id="addnew">
+            <label id="addnew-head">Add New Contact</label>
+            <form id="addnew-form" action="../php/add_new.php" method="GET">
+            	<label>Contact Name</label><br>
+                <input type="text" name="usr_nam" placeholder="Aditya" autofocus=""><br>
+                <label>Contact Number</label><br>
+                <input type="tel" name="usr_num" required="" placeholder="987643210"><br>                
+                <button type="submit" name="btn1">Add</button>
+                <button type="reset">Reset</button>
+                <button type="cancel"><a href="../php/session.php">Cancel</a></button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <marquee>Developed by SOUHARDHYA PAUL</marquee>
+    </div>
+</body>
+</html>

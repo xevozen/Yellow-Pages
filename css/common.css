@@ -1,0 +1,144 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul,
+ol, li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+margin: 0; padding: 0; border: 0; outline: none;
+}
+a{
+	text-decoration: none;
+}
+.clr{
+	clear: none;
+}
+#header-title{
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	background-color: #a142f4;
+	padding-top: 60px;
+	padding-bottom: 5px;
+	border-radius: 15px;
+	position: fixed;
+	top: -50px;
+	box-shadow: 0px 10px 20px #a142f4;
+}
+#header-title img{
+	margin: 0 auto;
+	height: auto;
+	width: 50%;
+}
+#blank-shift{
+	width: 100%;
+	min-height: 130px;
+}
+.container {
+	z-index: 1;
+	position: fixed;
+	top: 150px;
+	left: 0;
+	margin: 10px;
+	width: auto;
+	max-width: 100%;
+}
+
+/* The navbar */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	border-radius: 25px;
+	background-color: #7425ba;
+}
+
+/* Navbar links */
+.topnav img{
+	height: 50px;
+	border-radius: 25px;
+	float: left;
+	padding: 0;
+	text-decoration: none;
+}
+.topnav label {
+float: left;
+color: #bfa9ce;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.topnav a {
+float: left;
+color: #bfa9ce;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #a142f4;
+color: black;
+}
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.bg img {
+/* The image used */
+
+min-height: 380px;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+/* Needed to position the navbar */
+position: relative;
+}
+.footer{
+	width: 100%;
+	min-height: 50px;
+	position: fixed;
+	left:0;
+	bottom: -15px; 
+	text-align: center;
+	background-color: #a142f4;
+	padding-bottom: : 60px;
+	padding-top: 5px;
+	border-radius: 15px;
+	box-shadow: 0px -10px 20px #a142f4;
+}
+.footer marquee{
+	padding-top: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    img.bg {
+    left: 50%;
+    margin-left: -512px; }
+    .container {
+		top: 140px;
+	}
+}
+@media screen and (max-width: 600px) {
+	#header-title img{
+		width: 50%;
+		height: auto;
+	}  
+}
+@media screen and (max-width: 700px) {
+	.container {
+		top: 120px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.container {
+		top: 100px;
+	}
+}
